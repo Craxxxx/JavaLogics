@@ -163,7 +163,7 @@ public class pr11Module13pt3 {
         //USING METHOD CHAINING BY RETURNING THE OBJECT FROM THE SETTER METHOD
         //Analyzing and printing the results of the comparison methods
         System.out.println("is a equal to b: " + Comparison.setValues(a, b).isEqual(a, b).isEqualDescription(Comparison.result)); //using the setter method to set the values of a and b and then using the comparison methods to compare the values of a and b
-        System.out.println("is a not equal to b:" + Comparison.setValues(a, b).isNotEqual(a, b).isNotEqualDescription(Comparison.result)); //using the setter method to set the values of a and b and then using the comparison methods to compare the values of a and b
+        System.out.println("is a not equal to b: " + Comparison.setValues(a, b).isNotEqual(a, b).isNotEqualDescription(Comparison.result)); //using the setter method to set the values of a and b and then using the comparison methods to compare the values of a and b
         System.out.println("is a greater than b: " + Comparison.setValues(a, b).isGreater(a, b).isGreaterDescription(Comparison.result)); 
         System.out.println("is a greater than or equal to b: " + Comparison.setValues(a, b).isGreaterthanEqual(a, b).isGreaterthanEqualDescription(Comparison.result)); 
         System.out.println("is a less than b: " + Comparison.setValues(a, b).isLess(a, b).isLessDescription(Comparison.result)); 
