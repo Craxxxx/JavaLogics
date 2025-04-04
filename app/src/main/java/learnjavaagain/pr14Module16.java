@@ -104,8 +104,7 @@ public class pr14Module16 {
 
         isAnagram(a, b);
         //System.out.println(isAnagram(a, b));
-        
-        
+    
     }
     //MAIN FUNCTION
 
