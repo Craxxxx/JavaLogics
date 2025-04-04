@@ -12,6 +12,7 @@ public class pr14Module16 {
         //CHECKING IF THE STRING LENGTHS ARE EQUAL OR NOT
         if(str1.length() != str2.length())
         {
+            System.out.println("Doesnt have the same length.");
             System.out.println("The two strings are not anagrams of each other.");
             return false; //if the string is not the same length then is is not anagram
             //so return false
@@ -38,17 +39,21 @@ public class pr14Module16 {
             
                      for(char tempB : str2.toCharArray())
                      {
-                        char remove = '\0';
+                        char remove = tempB;
                         tempB = Character.toLowerCase(tempB); //converting the character to lower case
                         
                         //DEBUGGING SECOND LOOP
+                        //System.out.print("This is str2: ");
                         //System.out.println(tempB);
+
+                        //System.out.print("this is str1: ");
+                        //System.out.println(TempC);
                         //DEBUGGING SECOND LOOP
 
                          if (TempC == tempB)//if the character is present in the compared values
                              {
                     //             //removing the character from the second string
-                                remove = tempB; //removing the character from the second string    
+                                //removing the character from the second string    
                                 str2 = str2.replaceFirst(String.valueOf(remove),"");
                                 break; //exits the inner loop and continue the outer loop
                              }
