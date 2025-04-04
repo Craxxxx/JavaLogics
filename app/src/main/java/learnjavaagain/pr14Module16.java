@@ -8,10 +8,11 @@ public class pr14Module16 {
     public static boolean isAnagram(String str1, String str2)
     {  
          //temp variable to store character that needs to be checked
-         
+
         //CHECKING IF THE STRING LENGTHS ARE EQUAL OR NOT
         if(str1.length() != str2.length())
         {
+            System.out.println("The two strings are not anagrams of each other.");
             return false; //if the string is not the same length then is is not anagram
             //so return false
         }
@@ -19,8 +20,8 @@ public class pr14Module16 {
 
 
         //while the compared string is not empty loop through both
-        //while(!str2.isEmpty())
-        //{
+   
+
 
             //CHECKING ONE BY ONE THE CHARACTERS OF THE STRING
             for(char TempC : str1.toCharArray())
@@ -52,8 +53,12 @@ public class pr14Module16 {
                                 break; //exits the inner loop and continue the outer loop
                              }
                      }
-                     System.out.println(str2);
-                     System.out.println();
+
+                     //DEBUGGIING PURPOSES
+                     //System.out.println(str2);
+                     //System.out.println();
+                     //DEBUGGIING PURPOSES
+
                     //break; 
                 }
         //CHECKING ONE BY ONE THE CHARACTERS OF THE STRING
@@ -70,8 +75,7 @@ public class pr14Module16 {
             System.out.println("The two strings are not anagrams of each other.");
             return false; //if the second string is not empty it means it is not an angram
         }
- 
-        //}
+
     }
     //COMPARISON ANAGRAM METHODS
 
